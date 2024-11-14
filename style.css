@@ -1,0 +1,507 @@
+:root{
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(170, 90%, 34%);
+    --first-color-dark: hsl(170, 100%, 28%);
+    --first-color-darken: hsl(170, 100%, 23%);
+    --second-color: hsl(45, 100%, 52%);
+    --second-color-dark: hsl(45, 100%, 20%);
+    --white-color: hsl(0, 0%, 100%);
+    --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
+    --shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4);
+    --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, .3);
+    --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, .3);
+    --shadow-text: 0 2px 4px var(--first-color-darken);
+    }
+
+/* ==========  BOILER PLATE ================== */
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--first-color);
+    position: relative;
+    
+    
+}
+
+/* .main{
+    margin: 1rem 0.85rem;
+    max-width: 1800px;
+    
+} */
+
+.display{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* =================== BOILER PLATE CLOSED =================== */
+
+/* ======================= NAVBAR ========================= */
+
+.navbar-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform:capitalize;
+   font-size: 1rem;
+   margin: 1rem 0rem;
+   padding: 0rem 1.5rem;
+   position: sticky;
+   top: 0%;
+   z-index: 5;
+   background-color: var(--first-color);
+}
+
+/* ====================== NAVBAR-CLOSED ======================== */
+
+/* ========================= HERO-SECTION ========================== */
+ .hero-main{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin: 1rem 0.85rem;
+ }
+
+ .hero-1 h2,p{
+    text-transform: uppercase;
+    text-align: center;
+   
+ }
+ .hero-1 h2{
+    line-height: 0.95;
+    font-family: "titan one";
+ }
+
+ .hero-1bt{
+    display: flex;
+    gap: 2rem;
+   
+ }
+ .hero-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+
+ .hero-1 p{
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 300;
+
+ }
+ .hero-1bt{
+    margin-top: 1rem;
+ }
+
+ 
+ .hero-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+ }
+
+ #bt1{
+    font-size: 1.15rem;
+    padding: 0.25rem 0.9rem;
+    border-radius: 20px;
+    border:1px solid var(--second-color);
+    background-color: var(--second-color);
+    color: var(--second-color-dark);
+    box-shadow: inset var(--shadow-button);
+    text-transform:capitalize;
+ }
+
+ #bt2{
+    font-size: 1.15rem;
+    padding: 0.25rem 0.9rem;
+    border-radius: 20px;
+    border:1px solid var(--second-color);
+    background-color: var(--first-color-dark);
+    color: var(--second-color);
+    box-shadow: inset var(--shadow-button);
+    text-transform:capitalize;
+ }
+
+ .outer-circle{
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    background-color:var(--first-color-darken); 
+    box-shadow: inset var(--shadow-circle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .inner-circle{
+    height: 75%;
+    width: 75%;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    box-shadow: inset var(--shadow-circle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+ }
+
+ 
+
+ .img{
+    position: absolute;
+ }
+
+ .packet{
+    width: 70%;
+    height: 90%;
+    z-index: 0;
+    transform: rotate(18deg);
+    
+    
+ }
+
+ .normal{
+    width: 20%;
+    height: 20%;
+    z-index: 1;
+ }
+ .one{
+    top: 39%;
+    left: 84%;
+ }
+
+ .two{
+    top: 72%;
+    left: 75%;
+ }
+
+ .three{
+    top: 22%;
+    left: -5%;
+
+ }
+
+ .four{
+    top: 50%;
+    left: -6%;
+
+ }
+
+ .five{
+    top: 0%;
+    left: 65%;
+
+ }
+
+ .six{
+    top: 84%;
+    left: 27%;
+
+ }
+
+ .meat{
+    position: absolute;
+    width: 10%;
+    top: 41%;
+    left: 49%;
+    opacity: 0.7;
+ }
+
+/* Add this to your style.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* =================== AI ===================================== */
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-30px); /* Start from 30 pixels above */
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+@keyframes rotatePacket {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(18deg);
+    }
+}
+
+.packet {
+    animation: rotatePacket 1s forwards; /* Adjust duration as needed */
+    /* other styles */
+}
+
+.hero-1 {
+    opacity: 0; /* Initially hidden */
+    animation: slideInFromTop 1s forwards; /* Slide in from top animation */
+}
+
+.hero-2 {
+    opacity: 0; /* Initially hidden */
+    animation: slideInFromTop 1s forwards; /* Slide in from top animation */
+}
+
+/* Delay for individual images in hero-2 */
+.hero-2 .img {
+    opacity: 0; /* Initially hidden */
+    animation: slideInFromTop 1s forwards; /* Slide in from top animation */
+}
+
+.hero-2 .img.one {
+    animation-delay: 0.2s; /* Delay for the first image */
+}
+.hero-2 .img.two {
+    animation-delay: 0.4s; /* Delay for the second image */
+}
+.hero-2 .img.three {
+    animation-delay: 0.6s; /* Delay for the third image */
+}
+.hero-2 .img.four {
+    animation-delay: 0.8s; /* Delay for the fourth image */
+}
+.hero-2 .img.five {
+    animation-delay: 1s; /* Delay for the fifth image */
+}
+.hero-2 .img.six {
+    animation-delay: 1.2s; /* Delay for the sixth image */
+}
+
+/* ============================ AI ===================================== */
+
+
+/* =========================== HERO-SECTION-CLOSED ========================= */
+
+/* ============================== CARE-SECTION ================================ */
+.care-main{
+    background-color: var(--first-color-darken);
+
+}
+
+.care-heading{
+    margin: 3rem 0.85rem;
+    text-align: center;
+    padding-top:1.5rem;
+    text-transform: uppercase;
+    
+   
+}
+
+.care-heading h2{
+    font-family: "titan one";
+    font-size: 2.5rem;
+}
+
+.care-1{
+    margin: 1rem 0.85rem;
+    display:flex;
+    flex-direction: column-reverse;
+    padding-bottom: 1.5rem;
+}
+
+.care-11{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.care-11 img{
+
+    width: 80vw;
+    height: 80vw;
+    max-width: 500px;
+    max-height: 300px;
+    filter: drop-shadow(var(--shadow-img));
+    animation:slideinleft 1s ease-in;
+    
+
+}
+
+.care-12{
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.care-12 p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    animation:slideinright 1s ease-in;
+    
+}
+
+@keyframes slideinleft {
+    from {
+        transform: translatex(-50px); /* Start from 30 pixels above */
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        transform: translatex(0); /* End at original position */
+        opacity: 1; /* End fully opaque */
+    }
+    
+}
+
+@keyframes slideinright {
+    from {
+        transform: translatex(50px); /* Start from 30 pixels above */
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        transform: translatex(0); /* End at original position */
+        opacity: 1; /* End fully opaque */
+    }
+    
+}
+
+
+/* =================== RESPONSIVE- TYPOGRAPHY ======================== */
+
+@media (min-width:768px) {
+    .display{
+        display: flex;
+    }
+    
+    .bar{
+        display: none;
+    }
+
+    /* .main{
+        margin:1rem 2rem;
+    } */
+
+    .navbar-main{
+        font-size: 1.25vw;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    .navbar-anchors{
+        display: flex;
+        align-items: center;
+        gap: 2.5em;
+        
+    
+    }
+
+    .navbar-anchors a:hover{
+        color: var(--second-color);
+    }
+    
+    .navbar-icons{
+        display: flex;
+        align-items: center; 
+        gap: 1.5em;
+    
+    }
+
+    /* .navbar-anchors .navbar-icons i:hover{
+        color: var(--second-color);
+        fill: var(--second-color);   /// have to check the solution
+    } */
+
+    /* Base styles for the navbar anchors */
+
+   .hero-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem 2rem;
+    
+   }
+
+   .hero-2{
+    margin-top: 0;
+    max-width: 50%;
+    
+    
+   }
+
+   .hero-1{
+    max-width: 50%;
+    display: block;
+    
+ }
+
+ .hero-1 h2,p{
+    text-align: start;
+    font-size: 5vw;
+ }
+
+
+ .care-heading{
+    margin: 1rem 2rem;
+    padding-top: 2rem;
+}
+
+.care-1{
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.care-11{
+    margin-top: 0rem;
+}
+
+.care-12{
+    width: 50%;
+}
+
+.care-12 p{
+    font-size: 1.25vw;
+}
+
+
+}
+
+
+@media (min-width:2650px) {
+    /* .main{
+        margin:1rem auto;
+    } */
+
+    
+}

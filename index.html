@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chips website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+<!-- ================= NAVBAR ========================== -->
+ <div class="navbar-main">
+    <h1>chips</h1>
+    <!-- -----navbar-anchors-------- -->
+    <div class="navbar-anchors display">
+    <a>home</a>
+    <a>favorites</a>
+    <a href="#care">care</a>
+    <a>products</a>
+    <a>contact</a>
+
+    <!-- ------navbar-icons---------------- -->
+    <div class="navbar-icons display">
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+    </div>
+    <!-- ------navbar-icons-closed ---------------- -->
+    </div>
+    <!-- ------navbar-anchors-closed-------------------- -->
+    <spam class="bar"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></spam>
+ </div>
+ <!-- =========================== NAVBAR-CLOSED =============================== -->
+
+ <!-- =============================== HERO-SECTION =================================== -->
+
+ <div class="hero-main">
+    <div class="hero-1">
+        <h2>snack <br> with no<br> limits</h2>
+        <p>when you are hungry and dont have time to cook ,snacks is the perfect always prepare for midday hunger</p>
+        <div class="hero-1bt">
+            <button id="bt1">snack now</button>
+            <button id="bt2">buy now</button>
+        </div>
+        <img class="meat" src="/assets/meat.png">
+    </div>
+    <div class="hero-2">
+        <div class="outer-circle">
+            <div class="inner-circle"></div>
+            <img class="img normal one" src="/assets/chips-1.png">
+            <img class="img normal two" src="/assets/chips-2.png">
+            <img class="img normal three" src="/assets/chips-3.png">
+            <img class="img packet" src="/assets/favorite-chips-3.png">
+            <img class="img normal four" src="/assets/leaf-3.png">
+            <img class="img normal five" src="/assets/tomato-1.png">
+            <img class="img normal six" src="/assets/tomato-2.png">
+        </div>
+        
+    </div>
+ </div>
+
+ <!-- ================== HERO-SECTION CLOSED ============================ -->
+
+ <!-- ======================== CARE-SECTION  =================================== -->
+
+ <div id="care" class="care-main">
+    <div class="care-heading"><h2>enjoy and take <br> care of your health</h2></div>
+    <div class="care-1">
+        <div class="care-11 "><img src="/assets/care-chips.png"></div>
+        <div class="care-12">
+        <p><i class="fa-solid fa-bowl-food" style="color: #FFD43B;"></i> the potatoes that are made into snacks are grown and harvested and are 100% organic.</p>
+        <p><i class="fa-solid fa-fire-flame-curved" style="color: #FFD43B;"></i> we fry the fries with natural vegetables and oil for good care.</p>
+        <p><i class="fa-solid fa-heart-pulse" style="color: #FFD43B;"></i>the potatoes are not proccessed once they are cleaned they are cooked without preservatives.</p>
+        <p><i class="fa-solid fa-hand-holding-heart" style="color: #FFD43B;"></i>they contain fewer calories and less fat for good health.</p>
+        </div>
+    </div>
+ </div>
+
+    </div>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Select hero sections
+            const hero1 = document.querySelector('.hero-1');
+            const hero2 = document.querySelector('.hero-2');
+    
+            // Trigger animation for hero-1
+            hero1.style.opacity = '1'; // Make it visible to trigger the slideIn animation
+    
+            // Trigger animation for hero-2
+            hero2.style.opacity = '1'; // Make hero-2 visible to trigger the slideIn animation
+    
+            // Trigger animations for hero-2 images with a delay
+            const hero2Images = document.querySelectorAll('.hero-2 .img');
+            hero2Images.forEach((img, index) => {
+                setTimeout(() => {
+                    img.style.opacity = '1'; // Make the images visible to trigger the slideIn animation
+                }, index * 200); // Delay each image animation by 200ms
+            });
+        });
+    </script> -->
+
+</body>
+</html>
