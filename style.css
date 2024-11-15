@@ -47,6 +47,10 @@ a{
     text-decoration: none;
 }
 
+h4{
+    font-family: "titan one";
+    text-transform: capitalize;
+}
 
 
 
@@ -392,7 +396,95 @@ a{
     }
     
 }
+/* =========================== CARE-CLOSED ============================== */
 
+/* =============================== PRODUCT-SECTION ========================== */
+.product-main{
+    margin:3rem 0.85rem; 
+    position: relative;
+}
+
+.png{
+    position: absolute;
+    width: 6%;
+    opacity: 0.5;
+}
+
+.hamburger{
+    top: 63%;
+    left: 73%;
+    transform: rotate(-35deg);
+
+}
+
+.crab{
+    top: 6%;
+    left: -1%;
+    transform: rotate(38deg);
+
+}
+
+.product-heading h2{
+    font-family: "titan one";
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards{
+    height:90vw;
+    width:80vw;
+    max-width: 280px;
+    max-height: 320px;
+   
+    background-color: var(--first-color-darken);
+    box-shadow: inset var(--shadow-card);
+    border-radius: 10%;
+    position: relative;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 8rem;
+    column-gap: 5rem;
+    row-gap: 6rem;
+}
+
+.card-image{
+    position: relative;
+    width: 60%;
+    top: -19%;
+    left: 17%;
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.card-image:hover{
+    transform: translateY(-5px);
+}
+
+.cardm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+}
+
+.card-1 p{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+/* =============================== PRODUCT-CLOSED ====================================== */
 
 /* =================== RESPONSIVE- TYPOGRAPHY ======================== */
 
@@ -491,6 +583,14 @@ a{
 }
 
 .care-12 p{
+    font-size: 1.25vw;
+}
+
+.product-main{
+    margin: 3rem 2rem;
+}
+
+.card-1 p{
     font-size: 1.25vw;
 }
 
