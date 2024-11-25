@@ -52,6 +52,11 @@ h4{
     text-transform: capitalize;
 }
 
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
 
 
 /* =================== BOILER PLATE CLOSED =================== */
@@ -140,7 +145,7 @@ h4{
     padding: 0.25rem 0.9rem;
     border-radius: 20px;
     border:1px solid var(--second-color);
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color);
     color: var(--second-color);
     box-shadow: inset var(--shadow-button);
     text-transform:capitalize;
@@ -351,7 +356,7 @@ h4{
     height: 80vw;
     max-width: 500px;
     max-height: 300px;
-    filter: drop-shadow(var(--shadow-img));
+    filter:var(--shadow-img);
     animation:slideinleft 1s ease-in;
     
 
@@ -431,34 +436,44 @@ h4{
     text-transform: uppercase;
 }
 
-.cards{
-    height:90vw;
+ .cards{
+    /* height:90vw;
     width:80vw;
     max-width: 280px;
     max-height: 320px;
-   
+    */
+    width: 100%;
+    max-width: none;
+    height: auto;
     background-color: var(--first-color-darken);
     box-shadow: inset var(--shadow-card);
     border-radius: 10%;
     position: relative;
-}
+} 
+
+
+
 
 .products{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    display:grid;
+    /* flex-wrap: wrap; */
+    /* gap: 2rem; */
+    /* justify-content: center; */
     margin-top: 8rem;
-    column-gap: 5rem;
-    row-gap: 6rem;
+    /* column-gap: 5rem;
+    row-gap: 6rem; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 1.5rem;
 }
 
 .card-image{
     position: relative;
-    width: 60%;
+    width: 50%;
     top: -19%;
-    left: 17%;
+    left: 23%;
     transition: transform 0.3s ease-in-out 0s;
+    filter: var(--shadow-img);
+   
 }
 
 .card-image:hover{
@@ -469,7 +484,7 @@ h4{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 3rem;
+    padding: 1.25rem 2rem;
 }
 
 .card-1 p{
@@ -486,9 +501,205 @@ h4{
 
 /* =============================== PRODUCT-CLOSED ====================================== */
 
+/* ================================== CONTACT ================================================ */
+
+.contact-main{
+    background-color: var(--first-color-darken);
+    box-shadow: inset var(--shadow-button);
+    
+    border-radius: 40px;
+    margin: 2rem 1.5rem;
+    
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right:1rem;
+    max-width: 1000px;
+    position: relative;
+
+
+    
+}
+
+.contact-heading h2{
+    font-family: "titan one";
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem auto;
+    margin-bottom: 1.85rem;
+    font-size: 2.5rem;
+}
+
+.contactm{
+  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.contact-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 1.85rem;
+    
+}
+
+#ct-1 h3{
+    font-family: "titan one";
+    text-transform:capitalize;
+    
+}
+
+#ct-1 i{
+    font-size: 1.25rem;
+   
+}
+
+
+
+#ct-2 p{
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+#ct-2 h3{
+    font-family: "titan one";
+    text-transform:capitalize;
+}
+
+.contact-11{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+}
+
+.contact-12 h3{
+    font-family: "titan one";
+    text-transform: capitalize;
+}
+
+.contact-12 p{
+    text-transform: capitalize;
+    text-align:center;
+    font-size: 1rem;
+}
+
+.contact-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+#contactman{
+  
+    display: flex;
+    filter: var(--shadow-img);
+    width: 200px;
+    justify-self: center;
+    align-self: center;  
+}
+
+.cpng{
+    position: absolute;
+    width: 10%;
+    opacity: 0.6;
+}
+
+.carb{
+    top: 19%;
+    left: 9%;
+    transform: rotate(320deg);
+    z-index: 0;
+} 
+
+.meat{
+    top: 20%;
+    left: 82%;
+    transform: rotate(-7deg);
+    z-index: 0;
+}
+
+.shrimp{
+    top: 74%;
+    left: 31%;
+    z-index: 0;
+    transform: rotate(53deg);
+}
+
+/* ========================= CONTACT-CLOSED ======================================= */
+
+/* ============================ FAVORITE-SECTION ===================================== */
+
+.favorite-main{
+    text-align: center;
+    margin: 3rem 1.5rem;
+    position: relative;
+}
+
+.favorite-main h2{
+    font-family: "titan one";
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1.85rem;
+   
+}
+
+.favorite-main p{
+    text-transform: capitalize;
+    text-align:center;
+    font-size: 1rem;
+    
+}
+
+.favorite-section{
+    display: flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:1.2rem;
+    margin: 2.5rem auto;
+}
+
+.favorite-chips{
+    width: 32%;
+}
+
+.middle{
+    transform: scale(1.3);
+}
+
+.cheese{
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+}
+
+.cheese1{
+    top: 12%;
+    left: 87%;
+
+}
+
+.cheese2{
+    top: 33%;
+    left: 2%;
+    transform: rotate(45deg);
+
+}
 /* =================== RESPONSIVE- TYPOGRAPHY ======================== */
 
 @media (min-width:768px) {
+
+ 
     .display{
         display: flex;
     }
@@ -525,6 +736,8 @@ h4{
         gap: 1.5em;
     
     }
+
+
 
     /* .navbar-anchors .navbar-icons i:hover{
         color: var(--second-color);
@@ -565,6 +778,10 @@ h4{
     padding-top: 2rem;
 }
 
+.care-main{
+    margin-top: 3.5rem;
+}
+
 .care-1{
     margin: 1rem 2rem;
     display: flex;
@@ -594,7 +811,104 @@ h4{
     font-size: 1.25vw;
 }
 
+.products{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem 2rem;
+    
+    
+}
 
+.contact-heading h2{
+    /* font-size: 5vw; */
+}
+
+.contact-11{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+
+.contact-12 p{
+    font-size: 1.25vw;
+  
+   
+   
+}
+
+.contactm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-main{
+    margin:2rem auto ;
+    width: calc(100% - 4rem);
+   
+}
+
+#ct-2 p{
+    font-size: 1.05vw;
+    
+}
+
+.contact-12 p{
+    font-size: 1.05vw;
+    text-align:start;
+}
+
+.contact-12{
+    justify-content:start;
+    align-items:start ;
+
+}
+
+.contact-1{
+    align-items:start;
+}
+
+.favorite-main{
+    margin: 4rem 2rem;
+}
+
+.favorite-main p{
+    font: size 1.05vw; ;
+}
+
+.favorite-chips {
+    width: 25%; 
+}
+
+.favorite-section{
+    margin: 5rem auto;
+}
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+    .favorite-chips {
+        width: 20%; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .favorite-chips {
+        width: 20%; 
+    }
+
+    .favorite-section{
+        margin:7rem auto;
+        gap: 2.5rem;
+    }
 }
 
 
